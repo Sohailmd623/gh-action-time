@@ -3,6 +3,9 @@ on: workflow_dispatch
 jobs:
   date-job:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
     steps:
       - name: "Print Date!"
         run: date
